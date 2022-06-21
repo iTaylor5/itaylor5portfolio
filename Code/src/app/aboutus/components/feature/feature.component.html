@@ -1,0 +1,23 @@
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <app-v-two-section-title [titleSectionProp]="titleSectionProp"></app-v-two-section-title>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div *ngFor="let list of List;let last=last;" class="col-lg-4">
+                <div class="about-style wow fadeInUp text-center purple-hover" data-wow-delay="0.4s" >
+                    <div class="holder">
+                        <div *ngIf="!last" class="loader-dot">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <app-v-two-card-style1 [image]="list.image" [title]="list.title" [text]="list.description" ></app-v-two-card-style1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,65 @@
+<div id="loading">
+    <div id="loading-center">
+        <img src="./assets/sofbox-v2/images/loader.gif" alt="loader">
+    </div>
+</div>
+<!-- Header Component Start-->
+<app-v-two-header-style1 [logoImg]="navLogo" [navItemList]="navItems">
+    <li button class="button-btn list-inline-item">
+        <nav aria-label="breadcrumb">
+            <div class="blue-btn button"><a href="#">Get Started</a></div>
+        </nav>
+    </li>
+</app-v-two-header-style1>
+<!-- Header Component End-->
+<app-v-two-banner-style1 title="Portfolio 2 Columns">
+    <div bannerLinks>
+        <ol class="breadcrumb main-bg">
+            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home mr-1" aria-hidden="true"></i>Home</a></li>
+            <li class="breadcrumb-item active">Portfolio 2 Columns</li>
+        </ol>
+    </div>
+</app-v-two-banner-style1>
+<!-- Main Content -->
+<div class="main-content overflow-hidden">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="iq-masonry-block">
+                        <div class="isotope-filters isotope-tooltip">
+                            <button data-filter="" class="active">All<span class="post_no">10</span></button>
+                            <button data-filter=".creative">Creative<span class="post_no">6</span></button>
+                            <button data-filter=".design">Design<span class="post_no">2</span></button>
+                            <button data-filter=".print-branding">Print — Branding<span class="post_no">5</span></button>
+                            <button data-filter=".wordpress-ecommerce">Wordpress — eCommerce<span class="post_no">5</span></button>
+                        </div>
+                        <div class="iq-masonry iq-columns-2">
+                            <app-v-two-portfolio-box [List]="portfolioList"></app-v-two-portfolio-box>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Main Content END -->
+<app-v-two-footer-style2 [footerLogo]="footerLogo" [footerText]="footerText" [footerTitle]="footerTitle" [footerDescription]="footerDescription">
+    <ul menu>
+        <li><a class="text-white" href="javascript:void(0)">About Us</a></li>
+        <li><a class="text-white" href="javascript:void(0)">Theme</a></li>
+        <li><a class="text-white" href="javascript:void(0)">Features</a></li>
+        <li><a class="text-white" href="javascript:void(0)">Pricing</a></li>
+        <li><a class="text-white" href="javascript:void(0)">Blog</a></li>
+    </ul>
+    <ul about_us>
+        <li><a class="text-white" href="javascript:void(0)">About Sofbox</a></li>
+        <li><a class="text-white" href="javascript:void(0)">Roadmap</a></li>
+        <li><a class="text-white" href="javascript:void(0)">How it Work</a></li>
+        <li><a class="text-white" href="javascript:void(0)">Team</a></li>
+        <li><a class="text-white" href="javascript:void(0)">News</a></li>
+    </ul>
+    <div testimonial>
+        <app-v-two-testimonial-carousel [testimonialList]="List"></app-v-two-testimonial-carousel>
+    </div>
+</app-v-two-footer-style2>

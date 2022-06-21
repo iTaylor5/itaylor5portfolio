@@ -1,0 +1,37 @@
+<section class="popup-images align-left pt-0" id="iq-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="popup-images align-left  ">
+                    <div class="img-one wow zoomIn" data-wow-duration="0.6s">
+                        <img src="./assets/sofbox-v2/images/home-1/04.png" alt="image1">
+                    </div>
+                    <div class="d-block">
+                        <div class="position-absolute img-two wow zoomIn" data-wow-delay="0.4s" data-wow-duration="0.8s">
+                            <img src="./assets/sofbox-v2/images/home-1/05.png" alt="image2">
+                        </div>
+                        <div class="position-absolute img-three wow zoomIn" data-wow-delay="0.8s" data-wow-duration="1s">
+                            <img src="./assets/sofbox-v2/images/home-1/06.png" alt="image3">
+                        </div>
+                    </div>
+                </div>
+                <div class="layer_wrap iq-objects  style-two left-top">
+                    <span class="iq-objects-02">
+                        <img src="./assets/sofbox-v2/images/home-1/07.png" alt="drive02">
+                    </span>
+                    <span class="iq-objects-03">
+                        <img src="./assets/sofbox-v2/images/home-1/08.png" alt="drive02">
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <app-v-two-section-title [titleSectionProp]="titleSectionProp"></app-v-two-section-title>
+                <div class="row">
+                    <div *ngFor="let list of List" class="col-lg-4">
+                        <app-v-two-progressbar [title]="list.title" [hoverClass]="list.hoverClass" [percentage]="list.percentage" [animate]="list.animate"></app-v-two-progressbar>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

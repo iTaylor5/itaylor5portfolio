@@ -1,0 +1,8 @@
+<div [ngClass]="right ? 'team team-right' : 'team'">
+  <div class="left">
+    <ng-content select="[cardMedia]"></ng-content>
+  </div>
+  <div class="right">
+    <ng-content select="[cardContent]"></ng-content>
+  </div>
+</div>

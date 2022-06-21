@@ -1,0 +1,14 @@
+.iq-work { position: relative; padding-top: 70px !important; }
+.iq-work-detail { background: #16171d; padding: 60px 30px 60px; position: relative; overflow: hidden; border-bottom: 4px solid transparent; z-index: 1; }
+.iq-work-id { -webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; transition: all 0.5s linear; font-size: 140px; font-family: 'Montserrat', sans-serif; font-weight: bold; position: absolute; text-align: center; top: 120px; margin: 0 auto; left: 0; right: 0; line-height: 140px; background: -webkit-linear-gradient(28deg, rgba(118, 109, 254, 1) 0%, rgba(39, 53, 255, 1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+i.flaticon { color: #ffffff; display: block; }
+.iq-work-detail p { position: relative; }
+.flaticon::before { font-size: 60px !important; margin: 0; line-height: 60px; }
+.readmore { position: absolute; right: 30px; font-size: 40px; line-height: 40px; bottom: 30px; color: #ffffff; opacity: 0; z-index: 1; -webkit-transform: translate3d(20px, 20px, 0); transform: translate3d(20px, 20px, 0); -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.iq-work-detail::before { position: absolute; right: -80px; bottom: -80px; width: 195px; height: 195px; background: #191a20; border-radius: 100%; content: ''; opacity: 0; -webkit-transform: scale3d(0.5, 0.5, 1); transform: scale3d(0.5, 0.5, 1); -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; }
+.iq-work .iq-work-detail::before { -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; }
+.iq-work:hover .iq-work-detail { border-color: #ff9068; }
+.iq-work:hover i.flaticon { color: #ff9068; }
+.iq-work:hover .iq-work-detail::before { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
+.iq-work:hover .readmore { opacity: 1; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
+.iq-work:hover .iq-work-id { top: -30px; }

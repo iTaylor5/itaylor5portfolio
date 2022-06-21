@@ -1,0 +1,36 @@
+<footer  class="iq-footer iq-border-top" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6  iq-rmb-50">
+                <div class="logo">
+                    <a href="index.html"><img class="img-fluid" src="{{ footerLogo }}" alt="img"></a>
+                    <div class="iq-font-black mt-2">{{ footerText }}</div>
+                    <div class="iq-copyright mt-5">
+                        Copyright @ 2018 <a href="#">Sofbox</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-4 mt-lg-0 mt-md-0">
+                <h5 class="mb-4">Menu</h5>
+                <ul class="menu">
+                    <ng-content select="[menu]"></ng-content>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mt-lg-0 mt-4">
+                <h5 class="mb-4">About Us</h5>
+                <ul class="menu">
+                    <ng-content select="[about_us]"></ng-content>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 mt-lg-0 mt-4">
+                <h5 class="mb-4">Quick Links</h5>
+                <ul class="menu">
+                    <ng-content select="[quick_link]"></ng-content>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- back-to-top -->
+    <app-scroll-top></app-scroll-top>
+    <!-- back-to-top End -->
+</footer>

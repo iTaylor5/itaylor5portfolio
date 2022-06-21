@@ -1,0 +1,34 @@
+<app-loader></app-loader>
+<!-- Header Component Start-->
+<app-header-style3 [logoImg]="navLogo" className="main-bg" [navItemList]="navItems"></app-header-style3>
+<!-- Header Component End-->
+<app-black-banner-style1 title="Blog Detail Left Sidebar">
+  <div bannerLinks>
+    <ol class="breadcrumb title">
+      <li class="breadcrumb-item"><a href="index.html" class="">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+    </ol>
+  </div>
+</app-black-banner-style1>
+<!-- Main Content -->
+<div class="main-content">
+  <section class="iq-blogs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 ">
+          <app-black-sidebar></app-black-sidebar>
+        </div>
+        <div class="col-lg-8 ">
+          <app-detail></app-detail>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Footer component start -->
+<app-footer></app-footer>
+<!-- Footer component end -->
+<!-- Scroll to top component start -->
+<app-scroll-top></app-scroll-top>
+<!-- Scroll to top component end -->

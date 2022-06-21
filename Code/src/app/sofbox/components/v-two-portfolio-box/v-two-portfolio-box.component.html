@@ -1,0 +1,21 @@
+<div *ngFor="let list of List"  class="iq-masonry-item {{ list.class }}">
+    <div class="iq-portfolio">
+        <a class="portfolio-img" [routerLink]="[list.link]"><img class="img-fluid" src="{{ list.image }}" alt="img">
+            <div class="portfolio-link">
+                <div class="icon">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+            </div>
+        </a>
+        <div class="iq-portfolio-content  text-left">
+            <div class="details-box clearfix">
+                <div class="consult-details">
+                    <a [routerLink]="[list.link]">
+                        <h5 class="text-hover">{{ list.title }}</h5>
+                    </a>
+                    <p class="mb-0">{{ list.desc }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

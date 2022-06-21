@@ -1,0 +1,27 @@
+<section class="{{ sectionProp.class }}" id="{{ sectionProp.id }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ng-content select="[titleSection]"></ng-content>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6304.829986131271!2d-122.4746968033092!3d37.80374752160443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586e6302615a1%3A0x86bd130251757c00!2sStorey+Ave%2C+San+Francisco%2C+CA+94129!5e0!3m2!1sen!2sus!4v1435826432051" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-6">
+                <div class="">
+                    <img class="img-fluid" src="{{ contactDetail.logo }}" alt="img">
+                    <h5 class="mb-3 mt-5" *ngIf="contactDetail.address">{{ contactDetail.address }}</h5>
+                    <p class="mb-0" *ngIf="contactDetail.number">{{ contactDetail.number }}</p>
+                    <p class="mb-0" *ngIf="contactDetail.mail">{{ contactDetail.mail }}</p>
+                    <div class="deatils-social mt-5 mb-4">
+                        <ng-content select="[socailLink]"></ng-content>
+                    </div>
+                    <h4 class="mb-4">Get in Touch</h4>
+                    <ng-content select="[contactForm]"></ng-content>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

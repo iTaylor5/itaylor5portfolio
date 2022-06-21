@@ -1,0 +1,6 @@
+@import url('../../../../assets/sofbox-sass-black/css/style.css');
+@import url('../../../../assets/sofbox-sass-black/css/flaticon.css');
+@import url('../../../../assets/sofbox-sass-black/css/typography.css');
+.main-bg{
+  background-size: cover;
+}

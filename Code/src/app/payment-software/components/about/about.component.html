@@ -1,0 +1,45 @@
+<section class="pb-0" id="iq-about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <app-v-two-section-title [titleSectionProp]="titleSectionProp"></app-v-two-section-title>
+                <div class="text-left ">
+                    <ul class="iq-list wow fadeInUp">
+                        <li><i class="fa fa-check"></i><span>Boost SEO ranking</span></li>
+                        <li><i class="fa fa-check"></i><span>Marketing</span></li>
+                        <li><i class="fa fa-check"></i><span>Visual Reviews</span></li>
+                    </ul>
+                </div>
+                <a class="button mt-5 button-icon" href="#"><span class="btn-effect"> Read More</span></a>
+            </div>
+            <div class="col-lg-4">
+                <div class="scrollme text-center">
+                    <div class="animateme"
+                        data-when="enter"
+                        data-from="0.65"
+                        data-to="0.15"
+                        data-opacity="1"
+                        data-translatex="00"
+                        data-translatey="-600"
+                        data-easing="linear"
+                        data-rotatez="-25">
+                        <img class="img-fluid scrollme-img" src="./assets/sofbox-v2/images/home-2/201.png" alt="image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div *ngFor="let list of List" class="fancy-icon mb-5 wow fadeInUp  text-left">
+                    <div class="media">
+                        <div class="fancy-img">
+                            <img src="{{ list.image }}" alt="fancybox">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0">{{ list.title }}</h5>
+                            <p class="mb-0">{{ list.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

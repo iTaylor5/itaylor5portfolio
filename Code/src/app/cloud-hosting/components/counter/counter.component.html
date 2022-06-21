@@ -1,0 +1,22 @@
+<section class="pt-0 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <app-v-two-section-title [titleSectionProp]="titleSectionProp"></app-v-two-section-title>
+            </div>
+            <div *ngFor="let list of List" class="col-lg-4">
+                <div class="iq-timer counter-horizontal" style="background: #e0f7f2;">
+                    <div class="timer-details">
+                        <span class="timer" style="color: #000000;" [CountTo]="list.value" [from]="0" [duration]="5">{{ list.value }}</span>
+                        <span class="total-cust" style="color: #000000;">{{ list.cost }}</span>
+                        <i class="ion-android-add" aria-hidden="true" style="color: #000000;"></i>
+                        <div class="border-effect">
+                            <div class="title-saas"></div>
+                        </div>
+                        <p style="color: #000000;">{{ list.title }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

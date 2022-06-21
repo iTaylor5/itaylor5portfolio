@@ -1,0 +1,527 @@
+<!-- loading -->
+<div id="loading">
+    <div id="loading-center">
+        <img src="./assets/intro/images/intro-loader.gif" alt="loder">
+    </div>
+</div>
+<!-- loading End -->
+<!-- Header -->
+<header id="header" class="main-header">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="">
+                        <img class="logo" src="./assets/intro/images/logo.png" alt="image">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li *ngFor="let list of navItems" class="nav-item">
+                                <a class="nav-link {{ list.active !== undefined && list.active ? 'active' : '' }}" (click)="jumpTo(list.href); false" [href]="list.href">
+                                    {{ list.title }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right">
+                <div class="btn-purchase ">
+                    <a class="button white-btn shadow" href="https://themeforest.net/item/sofbox-software-responsive-angular-template/24429970">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End -->
+<div id="home">
+    <!-- START Slider 7 REVOLUTION SLIDER 6.1.5 -->
+    <p class="rs-p-wp-fix"></p>
+    <rs-module-wrap id="rev_slider_87_1_wrapper" data-alias="slider-7" data-source="gallery"
+        style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+        <rs-module id="rev_slider_87_1" style="display:none;" data-version="6.1.5">
+            <rs-slides>
+                <rs-slide data-key="rs-183" data-title="Slide" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+                    <img src="./assets/intro/revslider/assets/transparent.png" class="rev-slidebg" data-no-retina>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-0" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:1px,1px,0,0;yo:-4px,-4px,-1px,0;" data-text="w:normal;s:20,20,9,5;l:0,0,12,7;"
+                        data-dim="w:1600px,1600px,778px,480px;h:900px,900px,437px,269px;" data-frame_999="o:0;st:w;sR:8700;"
+                        style="z-index:8;"><img src="./assets/intro/revslider/assets/bg.png" width="1600" height="900" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-2" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:93px,93px,44px,27px;yo:49px,49px,23px,14px;" data-text="w:normal;s:20,20,9,5;l:0,0,12,7;"
+                        data-dim="w:418px,418px,202px,124px;h:263px,263px,127px,78px;"
+                        data-frame_0="x:400px,400px,194px,119px;y:150px,150px,72px,44px;rZ:360deg;tp:0px;"
+                        data-frame_1="st:240;sp:1500;sR:240;" data-frame_999="o:0;st:w;sR:7260;" style="z-index:9;">
+                        <img
+                            src="./assets/intro/revslider/assets/image-1.png" width="553" height="348" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-3" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:2px,2px,0,0;yo:339px,339px,164px,121px;" data-text="w:normal;s:20,20,9,5;l:0,0,12,7;"
+                        data-dim="w:350px,350px,170px,104px;h:220px,220px,106px,65px;"
+                        data-frame_0="x:600px,600px,291px,179px;y:-100px,-100px,-48px,-29px;rZ:360deg;"
+                        data-frame_1="x:33px,33px,15px,9px;y:-6px,-6px,-2px,-1px;z:100px;st:450;sp:1500;sR:450;"
+                        data-frame_999="o:0;st:w;sR:7050;" style="z-index:10;"><img src="./assets/intro/revslider/assets/image-3.png" width="553"
+                        height="348" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-4" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:89px,89px,42px,23px;yo:540px,540px,262px,197px;" data-text="w:normal;s:20,20,9,5;l:0,0,12,7;"
+                        data-dim="w:496px,496px,240px,148px;h:312px,312px,151px,93px;"
+                        data-frame_0="x:100px,100px,48px,29px;y:-100px,-100px,-48px,-29px;z:100px;rZ:360deg;"
+                        data-frame_1="y:30px,30px,14px,8px;st:450;sp:1500;sR:450;" data-frame_999="o:0;st:w;sR:7050;"
+                        style="z-index:11;"><img src="./assets/intro/revslider/assets/image-4.png" width="553" height="348" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-5" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:9px,9px,3px,15px;yo:716px,716px,347px,238px;" data-text="w:normal;s:20,20,9,5;l:0,0,12,7;"
+                        data-dim="w:279px,279px,135px,83px;h:176px,176px,85px,52px;"
+                        data-frame_0="x:300px,300px,145px,89px;y:-300px,-300px,-145px,-89px;z:100px;rZ:360deg;"
+                        data-frame_1="x:-3px,-3px,0px,0px;y:11px,11px,5px,3px;st:220;sp:1500;sR:220;"
+                        data-frame_999="o:0;st:w;sR:7280;" style="z-index:12;"><img src="./assets/intro/revslider/assets/image-5.png" width="553"
+                        height="348" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-6" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:1101px,1101px,534px,329px;yo:72px,72px,34px,20px;" data-text="w:normal;s:20,20,9,5;l:0,0,12,7;"
+                        data-dim="w:419px,419px,203px,125px;h:264px,264px,127px,78px;"
+                        data-frame_0="x:-500px,-500px,-243px,-149px;y:100px,100px,48px,29px;z:100px;rZ:-360deg;"
+                        data-frame_1="st:210;sp:1500;sR:210;" data-frame_999="o:0;st:w;sR:7290;" style="z-index:13;"><img
+                        src="./assets/intro/revslider/assets/image-2.png" width="553" height="348" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-7" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:1197px,1197px,581px,359px;yo:332px,332px,161px,115px;"
+                        data-text="w:normal;s:20,20,9,5;l:0,0,12,7;" data-dim="w:394px,394px,191px,117px;h:248px,248px,120px,74px;"
+                        data-frame_0="x:-500px,-500px,-243px,-149px;z:100px;rZ:-360deg;" data-frame_1="st:440;sp:1500;sR:440;"
+                        data-frame_999="o:0;st:w;sR:7060;" style="z-index:14;"><img src="./assets/intro/revslider/assets/image-6.png" width="553"
+                        height="348" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-8" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:1057px,1057px,513px,322px;yo:563px,563px,273px,193px;"
+                        data-text="w:normal;s:20,20,9,5;l:0,0,12,7;" data-dim="w:553px,553px,268px,165px;h:348px,348px,168px,103px;"
+                        data-frame_0="x:-300px,-300px,-145px,-89px;y:-100px,-100px,-48px,-29px;z:100px;rZ:-360deg;"
+                        data-frame_1="y:9px,9px,3px,1px;st:440;sp:1500;sR:440;" data-frame_999="o:0;st:w;sR:7060;"
+                        style="z-index:15;"><img src="./assets/intro/revslider/assets/image-7.png" width="553" height="348" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-9" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:799px,799px,388px,230px;yo:708px,708px,344px,201px;"
+                        data-text="w:normal;s:20,20,9,5;l:0,0,12,7;" data-dim="w:281px,281px,135px,83px;h:177px,177px,85px,52px;"
+                        data-frame_0="y:-400px,-400px,-194px,-119px;z:-100px;rZ:-360deg;"
+                        data-frame_1="x:-1px,-1px,0px,0px;y:13px,13px,6px,3px;st:430;sp:1500;sR:430;"
+                        data-frame_999="o:0;st:w;sR:7070;" style="z-index:16;"><img src="./assets/intro/revslider/assets/image-8.png" width="553"
+                        height="348" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-11" data-type="image" data-rsp_ch="on"
+                        data-xy="x:c;y:m;yo:-150px,-150px,-80px,-94px;" data-text="w:normal;s:20,20,9,5;l:0,0,12,7;"
+                        data-dim="w:371px,371px,180px,111px;h:116px,116px,56px,34px;" data-frame_0="sX:0.8;sY:0.8;"
+                        data-frame_1="e:Power4.easeOut;st:1690;sp:1000;sR:1690;" data-frame_999="o:0;st:w;sR:6310;"
+                        style="z-index:17;"><img src="./assets/intro/revslider/assets/LOGO.png" width="371" height="116" data-no-retina>
+                    </rs-layer>
+                    <!--
+                        -->
+                    <!-- <rs-layer
+                        id="slider-87-slide-183-layer-13"
+                        data-type="image"
+                        data-rsp_ch="on"
+                        data-xy="xo:944px,944px,465px,280px;yo:250px,250px,120px,33px;"
+                        data-text="w:normal;s:20,20,9,5;l:0,0,12,7;"
+                        data-dim="w:44px,44px,29px,23px;h:16px,16px,11px,8px;"
+                        data-frame_0="sX:0.9;sY:0.9;"
+                        data-frame_1="st:1890;sp:500;sR:1890;"
+                        data-frame_999="o:0;st:w;sR:6810;"
+                        style="z-index:18;"
+                        ><img src="./assets/intro/revslider/assets/FAF.png" width="44" height="16" data-no-retina>
+                        </rs-layer> -->
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-14" class="now-font" data-type="text" data-color="#0c0c0c"
+                        data-rsp_ch="on" data-xy="x:c;y:m;yo:0,0,-10px,-20px;"
+                        data-text="w:normal;s:50,50,24,20;l:60,60,28,30;fw:500;" data-frame_0="sX:0.9;sY:0.9;"
+                        data-frame_1="st:2200;sp:1000;sR:2200;" data-frame_999="o:0;st:w;sR:5800;"
+                        style="z-index:19;font-family:Poppins;">Software Landing Page
+                    </rs-layer>
+                    <!--
+                        -->
+                    <rs-layer id="slider-87-slide-183-layer-16" data-type="text" data-color="#6d73ef" data-rsp_ch="on"
+                        data-xy="x:c;y:m;yo:60px,60px,26px,10px;" data-text="w:normal;s:30,30,14,14;l:25,25,12,26;a:center;"
+                        data-frame_0="sX:0.9;sY:0.9;" data-frame_1="st:3120;sp:1000;sR:3120;" data-frame_999="o:0;st:w;sR:4880;"
+                        style="z-index:21;font-family:Poppins;">Software Responsive Landing Page
+                    </rs-layer>
+                    <!--
+                        -->
+                </rs-slide>
+            </rs-slides>
+            <rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+        </rs-module>
+        <script>
+            if (typeof revslider_showDoubleJqueryError === "undefined") {
+              function revslider_showDoubleJqueryError(sliderID) {
+                var err = "<div class='rs_error_message_box'>";
+                err += "<div class='rs_error_message_oops'>Oops...</div>";
+                err += "<div class='rs_error_message_content'>";
+                err +=
+                  "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+                err +=
+                  "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+                err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+                err += "</div>";
+                err += "</div>";
+                jQuery(sliderID).show().html(err);
+              }
+            }
+        </script>
+    </rs-module-wrap>
+    <!-- END REVOLUTION SLIDER -->
+</div>
+<!-- Start -->
+<div class="main-content">
+    <section class="dark-bg mb-0 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="false"
+                        data-items="4" data-items-laptop="3" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1"
+                        data-margin="30">
+                        <div class="clients-box">
+                            <img class="img-fluid client-img" src="./assets/intro/images/clients/c-1.png" alt="image2">
+                        </div>
+                        <div class="clients-box">
+                            <img class="img-fluid client-img" src="./assets/intro/images/clients/c-3.png" alt="image5">
+                        </div>
+                        <div class="clients-box">
+                            <img class="img-fluid client-img" src="./assets/intro/images/clients/c-2.png" alt="image3">
+                        </div>
+                        <div class="clients-box">
+                            <img class="img-fluid client-img" src="./assets/intro/images/clients/c-4.png" alt="image2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Homepages Demo Start -->
+    <section id="demos-isotop" class="iq-homepage position-relative iq-masonry-block d-block main-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <span class="display-2"><b>15+</b></span>
+                        <h2 class="mb-0">Introducing all new Sofbox</h2>
+                        <p>We have re-imagined Sofbox from bottom up. Its fresh, modern and more advanced.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <div class="isotope-filters-fixed">
+                        <button class="isotope-filters-button pl-3 pr-3" type="button" data-toggle="collapse"
+                            data-target="#isotope-filters-data" aria-controls="isotope-filters-data"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="float-left">Demo Categories</span> <i class="fas fa-bars float-right"></i>
+                        </button>
+                        <div id="isotope-filters-data" class="isotope-filters isotope-tooltip collapse">
+                            <button data-filter=".sofbox" class="active">Sofbox All Layout<span id="total"></span></button>
+                            <button data-filter=".gradient">Gradient Layout<span></span></button>
+                                <button data-filter=".pre-built">Pre Built<span></span></button>
+                                <button data-filter=".inner-page">Color Inner<span></span></button>
+                                <button data-filter=".gradient-inner">Gradient Inner<span></span></button>
+                                <button data-filter=".rtl-page">RTL Pages<span></span></button>
+                        </div>
+                    </div> -->
+                    <!-- <div class="iq-masonry iq-columns-3"> -->
+                        <div *ngFor="let list of List" class="col-lg-4 col-md-6 col-sm-12 {{ list.class }} text-center">
+                            <div class="home-block">
+                                <a target="_blank" [routerLink]="list.link"><img class="img-fluid" src="{{ list.image }}" alt=""></a>
+                            </div>
+                            <h5 class="home-tag mb-5 mt-3 text-dark"><a target="_blank" [routerLink]="list.link">{{ list.title }}</a></h5>
+                        </div>                       
+                        <!---------------
+                            Gradient Pages
+                        ----------------------->
+                        <!---------------
+                            Pre Built
+                        ----------------------->
+                        <!---------------
+                            Color Inner
+                        ----------------------->
+                        <!---------------
+                            Gradient Inner
+                        ----------------------->
+                        <!---------------
+                            RTL Pages
+                        ----------------------->
+                    <!-- </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Homepages Demo End -->
+</div>
+<!-- Responsive Retina Ready Start  -->
+<section class="iq-retina">
+    <div class="container">
+        <div class="row align-items-center ">
+            <div class="col-lg-7 mb-lg-0">
+                <div id="scenetwo" data-relative-input="true" class="d-block " data-wow-duration="1s">
+                    <div data-depth="0.10" class="wow bounceInUp" data-wow-delay="0.10s">
+                        <img src="./assets/intro/images/effect/01.png" class="img-fluid " alt="images" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12  wow fadeInRight">
+                <div class="title-box text-left">
+                    <h2 class="title mb-4">Fully Responsive & Retina Ready</h2>
+                    <p class="mb-0">Sofbox is fully responsive. Whether you are browsing from mobile, tablet, desktop or laptop,
+                        Sofbox will be fit all screen sizes. Sofbox is also Retina Ready which shows content rich in Apple
+                        devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Responsive Retina Ready End  -->
+<!-- One Click Demo Start -->
+<section class="dark-bg pb-5">
+    <img class="shape-1" src="./assets/intro/images/shape.png">
+    <div class="shape-2"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center text-white">
+                    <h2>Useful Elements</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-showcase"></div>
+</section>
+<!-- One Click Demo Start -->
+<section class="iq-innerpages main-bg core-features" id="features">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center ">
+                    <h2 class="title">Core Features</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-monitor-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Fully Responsive</h5>
+                        <p>The Template looks good and sharp with all kind of devices and screen sizes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-star-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Clean & Professional Codes</h5>
+                        <p>The Template is ready with clean and well structured coding style by the Professional developers team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-social-buffer-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Build With Bootstrap</h5>
+                        <p>This Template is created with latest bootstrap version which used its new classes and tags.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i aria-hidden="true" class="ion-ios-keypad-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Font Icons
+                        </h5>
+                        <p>There is font and icon available to you with lots of font-family and icon style.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-heart-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Creative Design Layout
+                        </h5>
+                        <p>Every single section is created with the passion and years of experience in the website development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i aria-hidden="true" class="ion-ios-albums-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Multiple Blog Pages</h5>
+                        <p>There is 30+ unique and creative multiple blog pages that shows the recent activities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i aria-hidden="true" class="ion-social-html5-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Valid HTML 5 And CSS 3
+                        </h5>
+                        <p>We have used latest HTML and Css Coding style that makes the pages in well working state.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-social-googleplus-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Google Font
+                        </h5>
+                        <p>There is lots of google fonts and icon with different different designs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-ionic-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Font Icons
+                        </h5>
+                        <p>There is font and icon available to you with lots of font-family and icon style.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-world-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Cross Browser
+                        </h5>
+                        <p>There is lots of google fonts and icon with different different designs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i aria-hidden="true" class="ion-load-a"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Creative And Modern Design
+                        </h5>
+                        <p>Every single section is created with the passion and years of experience in the website development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-cloud-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Light Weight & Fast
+                        </h5>
+                        <p>The Template is created carefully that work fast without taking more loading time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-person-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">24/7 Support
+                        </h5>
+                        <p>We have decided to give you 24 hour support. Because we really believe that customers are our first
+                            priority!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-heart-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">JS Animations
+                        </h5>
+                        <p>We have used JS animation for this template. which will helpful to make the Template much attractive!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-location-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Google Map
+                        </h5>
+                        <p>We have used JS animation for this template. which will helpful to make the Template much attractive!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12  text-center my-4">
+                <div class="sox-services service-pattern text-left blue-hover">
+                    <div class="sox-icon">
+                        <i class="ion-ios-heart-outline"></i>
+                        <h5 class="text-hover mt-3 mb-2 font-weight-bold">Much More
+                        </h5>
+                        <p>Every single section is created with the passion and years of experience in the website development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Scroll top component start-->
+<app-scroll-top></app-scroll-top>
+<!-- Scroll top component end-->
+<footer class="footer light-gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="iq-footer-info text-center ">
+                    <img src="./assets/intro/images/logo.png" class="img-fluid mb-5" alt="images" />
+                    <div class="title-box  text-center ">
+                        <h2>Lets build your website Together!</h2>
+                        <p>What are you waiting for? You are just one click away from creating a stunning website.</p>
+                    </div>
+                    <a class="button white-btn shadow" href="https://themeforest.net/item/sofbox-software-responsive-angular-template/24429970">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="iq-objects-asked">
+        <img class="shape-3" src="./assets/intro/images/shape-1.png" alt="drive01">
+    </div>
+</footer>

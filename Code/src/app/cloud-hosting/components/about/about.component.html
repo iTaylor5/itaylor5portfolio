@@ -1,0 +1,15 @@
+<section id="iq-about">
+    <div class="container">
+        <div class="row pt-4 pr-3 pl-3 fancy-service-list wow fadeInUp text-center">
+            <div *ngFor="let list of List" class="col-lg-4 col-md-6 col-sm-12">
+                <div class="fancy-service-detail">
+                    <div class="iq-img">
+                        <img class="fancy-list-img" src="{{ list.image }}" alt="fancy-list"><i class="ion ion-checkmark"></i>
+                    </div>
+                    <h5>{{ list.title }}</h5>
+                    <p class="mb-0">{{ list.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

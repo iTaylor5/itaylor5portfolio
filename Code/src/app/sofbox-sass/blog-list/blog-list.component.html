@@ -1,0 +1,39 @@
+<app-loader></app-loader>
+<!-- Header Component Start-->
+<app-header-style3 [logoImg]="navLogo" className="main-bg" [navItemList]="navItems"></app-header-style3>
+<!-- Header Component End-->
+<app-black-banner-style1 title="All Blogs">
+  <div bannerLinks>
+      <ol class="breadcrumb title">
+              <li class="breadcrumb-item"><a href="index.html" class="">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+      </ol>
+  </div>
+</app-black-banner-style1>
+<!--=================================
+MAIN CONTENT -->
+<div class="main-content">
+    <section class="iq-blogs">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <app-blog-listing [md]="6" [lg]="6" [blogList]="blogList">
+                </app-blog-listing>
+              </div>
+            </div>
+          <app-black-pagination
+            [nextUrl]="pagination.next_link"
+            [previousUrl]="pagination.previous_link"
+            [firstUrl]="pagination.first_link"
+            [lastUrl]="pagination.last_link"
+            [pagination]="pagination.pages"
+            [current]="pagination.current_page"></app-black-pagination>
+        </div>
+    </section>
+</div>
+<!-- Footer component start -->
+<app-footer></app-footer>
+<!-- Footer component end -->
+<!-- Scroll to top component start -->
+<app-scroll-top></app-scroll-top>
+<!-- Scroll to top component end -->

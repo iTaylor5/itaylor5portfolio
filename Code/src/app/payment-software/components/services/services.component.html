@@ -1,0 +1,33 @@
+<section class="bg-img-two">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<div class="card-img-effect  ">
+							<div class="main-img wow fadeIn" data-wow-delay="0.2s">
+								<img src="./assets/sofbox-v2/images/home-2/205.png" alt="image1">
+							</div>
+							<div class="sub-img wow rotate-effect-two" data-wow-delay="0.4s" >
+								<img src="./assets/sofbox-v2/images/home-2/206.png" alt="image2">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+                        <app-v-two-section-title [titleSectionProp]="titleSectionProp"></app-v-two-section-title>
+						<div class="row">
+							<div *ngFor="let list of List;let i = index" class="col-lg-4">
+								<div class="sox-services {{ list.hoverClass }}">
+                                    <div class="sox-icon">
+                                        <i aria-hidden="true" class="flaticon {{ list.icon }}"></i>
+									    <h6 class="text-hover">{{ list.title }}</h6>
+                                    </div>
+                                    <div class="service-number">
+                                        <span>{{ i + 1 }}</span>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						<div class="d-block text-left mt-5 "><a class="button gradient-btn button-icon" href="#"><span class="btn-effect"> Sign up now</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>

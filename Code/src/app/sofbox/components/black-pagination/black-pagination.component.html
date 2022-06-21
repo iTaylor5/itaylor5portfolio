@@ -1,0 +1,15 @@
+<div class="row mt-5">
+    <div class="col-sm-12">
+        <nav>
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" [href]="previousUrl"><i class="fas fa-arrow-left"></i></a>
+                </li>
+                <li class="page-item" [ngClass]="value.page === current ? 'active' : ''" *ngFor="let value of pagination"><a class="page-link" [href]="value.page_link">{{ value.page }}</a></li>
+                <li class="page-item">
+                  <a class="page-link" [href]="nextUrl"><i class="fas fa-arrow-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

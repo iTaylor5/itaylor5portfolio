@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-lg-{{ lg }} col-md-{{ md }} col-sm-12" *ngFor="let lists of blogList">
+        <div class="effect-chico blog">
+           <img [src]="lists.media" class="img-fluid" alt="img"/>
+           <div class="blog-info">
+             <a routerLink="/sofbox-saas/blog-detail-left-sidebar"><h2 class="font-weight-bold">{{lists.title}}</h2></a>
+              <p>{{lists.description}}</p>
+           </div>
+          <div class="blog-comment">
+              <ul>
+                <li class="list-inline-item  font-weight-bold"><a href="" class="text-white">{{lists.createddate}}</a></li>
+                <li class="float-right list-inline-item ml-3"><a href="" class="text-white font-weight-bold"><span class="icon"><i class=" far fa-comment-alt"></i></span> {{lists.comments}} </a></li>
+                <li class="float-right list-inline-item "><a href="" class="text-white font-weight-bold"><span class="icon"><i class="far fa-heart"></i></span> {{lists.likes}} </a></li>
+              </ul>
+           </div>
+        </div>
+     </div>
+ </div>

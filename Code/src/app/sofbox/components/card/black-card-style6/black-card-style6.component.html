@@ -1,0 +1,11 @@
+<div class="comments-box position-relative" [ngClass]="className">
+  <div class="media">
+    <ng-content select="[cardMedia]"></ng-content>
+    <div class="media-body">
+      <ng-content select="[cardHeader]"></ng-content>
+      <div class="clearfix"></div> 
+      <ng-content select="[cardBody]"></ng-content>
+    </div>
+  </div>
+  
+</div>

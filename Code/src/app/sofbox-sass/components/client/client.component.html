@@ -1,0 +1,20 @@
+<div class="owl-carousel owl-theme owl-loaded"
+  data-dots="false"
+  data-nav="false"
+  data-items="5"
+  data-items-laptop="5"
+  data-items-tab="4"
+  data-items-mobile="2"
+  data-items-mobile-sm="1"
+  data-autoplay="true"
+  data-margin="30">
+  <div class="item" *ngFor="let option of images">
+    <div class="iq-client-info text-center">
+      <div class="img ">
+        <img [src]="option.src" class="img-fluid mb-4 default-img" alt="images">
+        <img [src]="option.hover" class="img-fluid mb-4 hover-img" alt="hover-images">
+        <h5 class="text-white">{{ option.title }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
