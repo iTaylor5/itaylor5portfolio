@@ -1,8 +1,10 @@
-<div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="true" data-dots="false" data-items="3" data-items-laptop="3" data-items-tab="2" data-items-mobile="2" data-items-mobile-sm="1" data-margin="30" >
+<div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="true" data-dots="false" data-items="3"
+    data-items-laptop="3" data-items-tab="2" data-items-mobile="2" data-items-mobile-sm="1" data-margin="30">
     <div *ngFor="let list of List" class="item">
         <div class="iq-masonry-item">
             <div class="iq-portfolio">
-                <a href="#" class="portfolio-img"><img class="img-fluid" src="{{ list.image }}" alt="img">
+                <a class="portfolio-img" (click)="myfunction(list.id)"><img class="img-fluid" src="{{ list.image }}"
+                        alt="img">
                     <div class="portfolio-link">
                         <div class="icon">
                             <i class="fa fa-link" aria-hidden="true"></i>

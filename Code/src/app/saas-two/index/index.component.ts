@@ -18,6 +18,13 @@ export class IndexComponent implements OnInit {
   footerText: string = 'itaylor5se@gmail.com';
   footerTitle: string = 'Lets chat';
   footerDescription: string = 'itaylor5se@gmail.com';
+
+  showSizingCompany: boolean = false;
+  tractorTracker: boolean = false;
+  financeApp: boolean = false;
+
+
+
   public navItems: any = [
     {
       href: '#iq-home', title: 'Home',
@@ -30,32 +37,60 @@ export class IndexComponent implements OnInit {
     { href: '#iq-contact', title: 'Contact Us' }
   ];
 
-  titleSectionProp: any = {
-    title: 'Tractor Tracker',
-    description: "Designed to capture customers, drivers, machines and implement history from a straightforward input, simplifying admin tasks while capturing all significant information necessary to monitor the company's well-being."
-  };
-
-  titleSectionProp1: any = {
-    title: 'Financial Tracker',
-    description: "Built to help a family monitor their finances and track their expenditure"
-  };
-
-  List: any[] = [
-    { name: 'Walhan Bobe', design: 'CEO Sofbox', image: './assets/sofbox-v2/images/home-2/215.jpeg', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.' },
-    { name: 'Walhan Bobe', design: 'CEO Sofbox', image: './assets/sofbox-v2/images/home-2/216.jpeg', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.' },
-    { name: 'Walhan Bobe', design: 'CEO Sofbox', image: './assets/sofbox-v2/images/home-2/217.jpeg', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.' }
-  ];
-
   testimonialSectionProp: any = {
     class: 'iq-rpt-zero',
     id: 'iq-testimonial'
   }
 
-  testimonialList1: any[] = [
+  titleTractorTracker: any = {
+    title: 'Tractor Tracker',
+    description: "Designed to capture customers, drivers, machines and implement history from a straightforward input, simplifying admin tasks while capturing all significant information necessary to monitor the company's well-being."
+  };
+
+  tractorTractorList1: any[] = [
+    { name: 'Dashboard', image: './assets/past-project-images/tractorTracker/dashboard-full.png' },
+    { name: 'Implement Monthly Recap', image: './assets/past-project-images/tractorTracker/implements-4.png' },
+    { name: 'Machines Selection', image: './assets/past-project-images/tractorTracker/machines-1.png' },
+    { name: 'Farmer View', image: './assets/past-project-images/tractorTracker/farmer-full.png' }
+  ];
+
+  titleFinApp: any = {
+    title: 'Financial Tracker',
+    description: "Built to help a family monitor their finances and track their expenditure"
+  };
+
+  finAppList1: any[] = [
     { name: 'Dashboard', designation: 'CEO Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/25.jpeg' },
     { name: 'Julia Aann', designation: 'COO Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/26.jpeg' },
     { name: 'Mac Znder', designation: 'Manager Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/27.jpeg' }
   ];
+
+  sizingCompany: any = {
+    title: 'Computer Vision Sizing App',
+    description: "Built to help a family monitor their finances and track their expenditure"
+  };
+
+  sizingCompanyList1: any[] = [
+    { name: 'Dashboard', designation: 'CEO Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/25.jpeg' },
+    { name: 'Julia Aann', designation: 'COO Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/26.jpeg' },
+    { name: 'Mac Znder', designation: 'Manager Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/27.jpeg' }
+  ];
+
+  // tractorTractorList1: any[] = [
+  //   { name: 'Dashboard', designation: 'CEO Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/25.jpeg' },
+  //   { name: 'Julia Aann', designation: 'COO Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/26.jpeg' },
+  //   { name: 'Mac Znder', designation: 'Manager Sofbox', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.', image: './assets/sofbox-v2/images/home-1/27.jpeg' }
+  // ];
+
+  List: any[] = [
+    { name: 'Walhan123 Bobe', design: 'CEO Sofbox', image: './assets/sofbox-v2/images/home-2/215.jpeg', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.' },
+    { name: 'Walhan345 Bobe', design: 'CEO Sofbox', image: './assets/sofbox-v2/images/home-2/216.jpeg', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.' },
+    { name: 'Walhan Bobe', design: 'CEO Sofbox', image: './assets/sofbox-v2/images/home-2/217.jpeg', description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium incididunt ut labore et dolore Sed omnis iste ut perspiciatis.' }
+  ];
+
+
+
+
   constructor(private plugins: PluginsService) {
 
   }
@@ -68,6 +103,29 @@ export class IndexComponent implements OnInit {
     setTimeout(function () {
       current.plugins.index();
     }, 200);
+
+    this.tractorTracker = true;
+  }
+
+  projectSelected(id: string) {
+    console.log("Back in index and the project selected is, " + id);
+
+    if (id.localeCompare("tractorTracker") === 0) {
+      console.log("tractorTracker");
+      this.showSizingCompany = false;
+      this.financeApp = false;
+      this.tractorTracker = true;
+    } else if (id.localeCompare("famFinApp") === 0) {
+      console.log("famFinApp");
+      this.showSizingCompany = false;
+      this.financeApp = true;
+      this.tractorTracker = false;
+    } else {
+      console.log("showSizingCompany");
+      this.showSizingCompany = true;
+      this.financeApp = false;
+      this.tractorTracker = false;
+    }
   }
 
 }
