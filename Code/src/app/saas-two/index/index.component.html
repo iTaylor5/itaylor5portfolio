@@ -14,130 +14,45 @@
     <app-features></app-features>
     <app-tips-trick></app-tips-trick>
     <app-tips-trick1></app-tips-trick1>
-    <app-portfolio (projectSelected)="projectSelected($event)"></app-portfolio>
+    <app-portfolio></app-portfolio>
 
-    <!-- Tractor Tracker -->
-    <app-v-two-testimonial [sectionProp]="testimonialSectionProp" *ngIf="tractorTracker">
-        <div imageList1 class="bg-img-jump left">
-            <div class="wow zoomIn" data-wow-delay="0.2s">
-                <img class="img-one" src="./assets/past-project-images/tractorTracker/thumb-1.png" alt="image1">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.4s">
-                <img class="img-two" src="./assets/past-project-images/tractorTracker/thumb-2.png" alt="image2">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.6s">
-                <img class="img-three" src="./assets/past-project-images/tractorTracker/thumb-3.png" alt="image3">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.8s">
-                <img class="img-four" src="./assets/past-project-images/tractorTracker/thumb-4.png" alt="image4">
-            </div>
-        </div>
+    <div class="main-content overflow-hidden" id="iq-gallery">
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <app-v-two-section-title [titleSectionProp]="titleSectionProp"></app-v-two-section-title>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="iq-masonry-block">
+                            <div class="isotope-filters isotope-tooltip">
+                                <button data-filter="" class="active">All<span class="post_no">30</span></button>
+                                <button data-filter=".tractorTracker" class="post_no">Tractor Tracker<span
+                                        class="post_no">9</span></button>
+                                <button data-filter=".finApp">Finance App<span class="post_no">6</span></button>
+                                <button data-filter=".sizingApp">Sizing App<span class="post_no">3</span></button>
+                                <!-- <button data-filter=".print-branding">Branding<span class="post_no">5</span></button> -->
+                            </div>
 
-        <div testimonialTitle>
-            <app-v-two-section-title [titleSectionProp]="titleTractorTracker"></app-v-two-section-title>
-        </div>
+                            <!-- <div class="col-lg-8">
+                                <app-v-two-section-title [titleSectionProp]="titleSectionProp"></app-v-two-section-title>
+                            </div> -->
 
-        <div testimonialList>
-            <app-v-two-testimonial-carousel2 [testimonialList]="tractorTractorList1"></app-v-two-testimonial-carousel2>
-        </div>
+                            <div class="iq-masonry iq-columns-3">
+                                <app-v-two-portfolio-box [List]="tractorTrackerList"></app-v-two-portfolio-box>
+                            </div>
 
-        <div imageList2 class="bg-img-jump right">
-            <div class="wow zoomIn" data-wow-delay="0.2s">
-                <img class="img-one" src="./assets/past-project-images/tractorTracker/thumb-5.png" alt="image1">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.4s">
-                <img class="img-two" src="./assets/past-project-images/tractorTracker/thumb-6.png" alt="image2">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.6s">
-                <img class="img-three" src="./assets/past-project-images/tractorTracker/thumb-7.png" alt="image3">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.8s">
-                <img class="img-four" src="./assets/past-project-images/tractorTracker/thumb-8.png" alt="image4">
-            </div>
-        </div>
-    </app-v-two-testimonial>
 
-    <app-v-two-testimonial [sectionProp]="testimonialSectionProp" *ngIf="financeApp">
-        <div imageList1 class="bg-img-jump left">
-            <div class="wow zoomIn" data-wow-delay="0.2s">
-                <img class="img-one" src="./assets/sofbox-v2/images/home-1/21.jpeg" alt="image1">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="wow zoomIn" data-wow-delay="0.4s">
-                <img class="img-two" src="./assets/sofbox-v2/images/home-1/22.jpeg" alt="image2">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.6s">
-                <img class="img-three" src="./assets/sofbox-v2/images/home-1/23.jpeg" alt="image3">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.8s">
-                <img class="img-four" src="./assets/sofbox-v2/images/home-1/24.jpeg" alt="image4">
-            </div>
-        </div>
+        </section>
+    </div>
 
-        <div testimonialTitle>
-            <app-v-two-section-title [titleSectionProp]="titleFinApp"></app-v-two-section-title>
-        </div>
-
-        <div testimonialList>
-            <app-v-two-testimonial-carousel2 [testimonialList]="finAppList1"></app-v-two-testimonial-carousel2>
-        </div>
-
-        <div imageList2 class="bg-img-jump right">
-            <div class="wow zoomIn" data-wow-delay="0.2s">
-                <img class="img-one" src="./assets/sofbox-v2/images/home-1/21.jpeg" alt="image1">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.4s">
-                <img class="img-two" src="./assets/sofbox-v2/images/home-1/22.jpeg" alt="image2">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.6s">
-                <img class="img-three" src="./assets/sofbox-v2/images/home-1/23.jpeg" alt="image3">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.8s">
-                <img class="img-four" src="./assets/sofbox-v2/images/home-1/24.jpeg" alt="image4">
-            </div>
-        </div>
-    </app-v-two-testimonial>
-
-    <app-v-two-testimonial [sectionProp]="testimonialSectionProp" *ngIf="showSizingCompany">
-        <div imageList1 class="bg-img-jump left">
-            <div class="wow zoomIn" data-wow-delay="0.2s">
-                <img class="img-one" src="./assets/sofbox-v2/images/home-1/21.jpeg" alt="image1">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.4s">
-                <img class="img-two" src="./assets/sofbox-v2/images/home-1/22.jpeg" alt="image2">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.6s">
-                <img class="img-three" src="./assets/sofbox-v2/images/home-1/23.jpeg" alt="image3">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.8s">
-                <img class="img-four" src="./assets/sofbox-v2/images/home-1/24.jpeg" alt="image4">
-            </div>
-        </div>
-
-        <div testimonialTitle>
-            <app-v-two-section-title [titleSectionProp]="sizingCompany"></app-v-two-section-title>
-        </div>
-
-        <div testimonialList>
-            <app-v-two-testimonial-carousel2 [testimonialList]="sizingCompanyList1"></app-v-two-testimonial-carousel2>
-        </div>
-
-        <div imageList2 class="bg-img-jump right">
-            <div class="wow zoomIn" data-wow-delay="0.2s">
-                <img class="img-one" src="./assets/sofbox-v2/images/home-1/21.jpeg" alt="image1">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.4s">
-                <img class="img-two" src="./assets/sofbox-v2/images/home-1/22.jpeg" alt="image2">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.6s">
-                <img class="img-three" src="./assets/sofbox-v2/images/home-1/23.jpeg" alt="image3">
-            </div>
-            <div class="wow zoomIn" data-wow-delay="0.8s">
-                <img class="img-four" src="./assets/sofbox-v2/images/home-1/24.jpeg" alt="image4">
-            </div>
-        </div>
-    </app-v-two-testimonial>
-
-    <app-post></app-post>
+    <!-- <app-post></app-post> -->
 </div>
 <!-- End Main content -->
 <app-v-two-footer-style2 [footerLogo]="footerLogo" [footerText]="footerText" [footerTitle]="footerTitle"

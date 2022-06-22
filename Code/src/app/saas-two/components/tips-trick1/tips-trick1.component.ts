@@ -10,7 +10,7 @@ export class TipsTrick1Component implements OnInit {
   titleSectionProp: any = {
     class: 'text-left',
     title: 'And finally to web applications',
-    description: 'With the adventures of youth out of my system, my time is spent on devving, predominantly focusing on building web applications with these tools '
+    description: 'I have had a long-standing fascination with software and technology. So with the adventures of youth out of my system, I made a drastic change toward a career I love. I sacrificed a great deal to begin my journey as a software engineer, and five years later, I have no regrets. My time is now spent devving, predominantly focusing on building web applications that are beautifully laid out with an intuitive feel and elegant design. My weapons of choice are:'
   };
 
   List: any[] = [

@@ -5,7 +5,44 @@
                 <app-v-two-section-title [titleSectionProp]="titleSectionProp"></app-v-two-section-title>
             </div>
             <div class="col-lg-12">
-                <app-v-two-case-studies [List]="List" (projectSelected)="doSomething($event)"></app-v-two-case-studies>
+
+                <app-v-two-case-studies [List]="List" (projectSelected)="projectSelected($event)">
+                </app-v-two-case-studies>
+
+                <app-v-two-testimonial [sectionProp]="testimonialSectionProp">
+                    <div testimonialTitle>
+                        <app-v-two-section-title [titleSectionProp]="titleTractorTracker"></app-v-two-section-title>
+                    </div>
+
+                    <div testimonialList>
+                        <app-v-two-testimonial-carousel2 [testimonialList]="tractorTractorList1">
+                        </app-v-two-testimonial-carousel2>
+                    </div>
+                </app-v-two-testimonial>
+
+                <app-v-two-testimonial [sectionProp]="testimonialSectionProp">
+
+                    <div testimonialList>
+                        <app-v-two-testimonial-carousel2 [testimonialList]="finAppList">
+                        </app-v-two-testimonial-carousel2>
+                    </div>
+
+                    <div testimonialTitle>
+                        <app-v-two-section-title [titleSectionProp]="titleFinApp"></app-v-two-section-title>
+                    </div>
+
+                </app-v-two-testimonial>
+
+                <app-v-two-testimonial [sectionProp]="testimonialSectionProp">
+                    <div testimonialTitle>
+                        <app-v-two-section-title [titleSectionProp]="sizingCompany"></app-v-two-section-title>
+                    </div>
+
+                    <div testimonialList>
+                        <app-v-two-testimonial-carousel2 [testimonialList]="sizingCompanyList1">
+                        </app-v-two-testimonial-carousel2>
+                    </div>
+                </app-v-two-testimonial>
             </div>
         </div>
     </div>
