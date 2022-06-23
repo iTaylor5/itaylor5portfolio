@@ -1,3 +1,20 @@
 /* footer.footer-one.footer-shap .container:after{ position: absolute; bottom: 0; height: 238px;left: 0; z-index: 0; width: 100%; content: ""; background: url(../../../../../../assets/sofbox-v2/images/home-2/footer.png)no-repeat;}
 footer.footer-one.footer-shap .container:before{ position: absolute; bottom: 0; height: 196px;right: 0; z-index: 0; width: 157px; opacity: 0.1; content: ""; background: url(../../../../../../assets/sofbox-v2/images/home-2/footer-two.png)no-repeat;}
 footer.footer-one.footer-shap:after { position: absolute; top: 0; height: 190px; z-index: 0; width: 100%; content: ""; background: url(../../../../../../assets/sofbox-v2/images/home-2/footer-bg.png)no-repeat; } */
+
+
+footer .text span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #2F9599;
+}
+
+footer .text span a {
+    font-weight: 500;
+    color: #2F9599;
+}
+
+/*color: #ccd6f6;*/
+footer .text span a:hover {
+    text-decoration: underline;
+}

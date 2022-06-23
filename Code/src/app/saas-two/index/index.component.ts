@@ -16,14 +16,64 @@ export class IndexComponent implements OnInit {
   public navLogo: string = logoImg;
   public footerLogo: string = footerLogo;
   footerText: string = 'itaylor5se@gmail.com';
-  footerTitle: string = 'Lets chat';
+  footerTitle: string = 'Drop me a mail';
   footerDescription: string = 'itaylor5se@gmail.com';
 
-  showSizingCompany: boolean = false;
-  tractorTracker: boolean = false;
-  financeApp: boolean = false;
+  // showSizingCompany: boolean = false;
+  // tractorTracker: boolean = false;
+  // financeApp: boolean = false;
 
+  public socialNavItems: any = [
+    { href: 'javascript:void(0)', icon: '<i class="fab fa-twitter"></i>' },
+    { href: 'javascript:void(0)', icon: '<i class="fab fa-facebook-f"></i>' },
+    { href: 'javascript:void(0)', icon: '<i class="fab fa-google"></i>' },
+    { href: 'javascript:void(0)', icon: '<i class="fab fa-github"></i>' },
+  ];
 
+  public footerTextBottom = '© 2018 Sofbox Developed by <b>iqonicthemes</b>.';
+
+  public footerHome: any = [
+    {
+      section: [
+        {
+          href: 'javascript:void(0)',
+          title: 'Home'
+        },
+        {
+          href: 'javascript:void(0)',
+          title: 'About us'
+        },
+        {
+          href: 'javascript:void(0)',
+          title: 'Our team'
+        },
+        {
+          href: 'javascript:void(0)',
+          title: 'Portfolio'
+        }
+      ]
+    },
+    {
+      section: [
+        {
+          href: 'javascript:void(0)',
+          title: 'FAQs'
+        },
+        {
+          href: 'javascript:void(0)',
+          title: 'Blog'
+        },
+        {
+          href: 'javascript:void(0)',
+          title: 'Our services'
+        },
+        {
+          href: 'javascript:void(0)',
+          title: 'Contact us'
+        }
+      ]
+    }
+  ];
 
   public navItems: any = [
     {
@@ -33,7 +83,6 @@ export class IndexComponent implements OnInit {
     { href: '#iq-feature', title: 'Feature' },
     { href: '#iq-portfolio', title: 'Portfolio' },
     { href: '#iq-gallery', title: 'Gallery' },
-    { href: '#iq-blog', title: 'Blog' },
     { href: '#iq-contact', title: 'Contact Us' }
   ];
 
@@ -197,6 +246,7 @@ export class IndexComponent implements OnInit {
   };
 
 
+
   constructor(private plugins: PluginsService) { }
 
   ngOnInit() {
@@ -208,28 +258,7 @@ export class IndexComponent implements OnInit {
       current.plugins.index();
     }, 200);
 
-    this.tractorTracker = true;
-  }
-
-  projectSelected(id: string) {
-    console.log("Back in index and the project selected is, " + id);
-
-    // if (id.localeCompare("tractorTracker") === 0) {
-    //   console.log("tractorTracker");
-    //   this.showSizingCompany = false;
-    //   this.financeApp = false;
-    //   this.tractorTracker = true;
-    // } else if (id.localeCompare("famFinApp") === 0) {
-    //   console.log("famFinApp");
-    //   this.showSizingCompany = false;
-    //   this.financeApp = true;
-    //   this.tractorTracker = false;
-    // } else {
-    //   console.log("showSizingCompany");
-    //   this.showSizingCompany = true;
-    //   this.financeApp = false;
-    //   this.tractorTracker = false;
-    // }
+    // this.tractorTracker = true;
   }
 
 }
