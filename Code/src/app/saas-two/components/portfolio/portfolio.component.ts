@@ -25,7 +25,8 @@ export class PortfolioComponent implements OnInit {
   // Tractor Tracker
   titleTractorTracker: any = {
     title: 'Tractor Tracker',
-    description: "Is an application built for Ukhoziagri, the leading agriculture equipment rental supplier in Zimbabwe, to help manage their machine and implement rentals. The application optimizes their business by simplifying administrative tasks and centralizing all data."
+    description: "Is an application I designed and built for Ukhoziagri, a leading agriculture company that specializes in equipment rentals, to handle all their job and customer data. The application optimizes their business by simplifying administrative tasks and centralizing all data.",
+    images: ['./assets/pictures/angular.png', './assets/pictures/spring.png', './assets/pictures/mysql.png']
   };
 
   tractorTractorList1: any[] = [
@@ -38,7 +39,8 @@ export class PortfolioComponent implements OnInit {
   // FinApp
   titleFinApp: any = {
     title: 'Family Finance Tracker',
-    description: "I began building this application to help my personnel finances. I am now in the process of launching it as a SaaS application."
+    description: "I began building this application to help my personnel finances. I am now in the process of launching it as a SaaS application.",
+    images: ['./assets/pictures/angular.png', './assets/pictures/spring.png', './assets/pictures/mysql.png']
   };
 
   finAppList: any[] = [
@@ -49,7 +51,8 @@ export class PortfolioComponent implements OnInit {
 
   sizingCompany: any = {
     title: 'Computer Vision Sizing App',
-    description: "This was chosen as our final project in my Software Engineering degree. We were tasked with building an application that would be able to extract body measurements of a figure in an image provided to us by the frontend site. To accomplish this, we used AI modules to clean the image and carry out segmentation on the figures. E-commerce sites use this software to create profiles for users who would then only be shown clothing that would fit them."
+    description: "This was chosen as our final project in my Software Engineering degree. We were tasked with building an application that would be able to extract body measurements of a figure in an image provided to us by the frontend site. To accomplish this, we used AI modules to clean the image and carry out segmentation on the figures. E-commerce sites use this software to create profiles for users who would then only be shown clothing that would fit them.",
+    images: ['./assets/pictures/python.jpeg']
   };
 
   sizingCompanyList1: any[] = [

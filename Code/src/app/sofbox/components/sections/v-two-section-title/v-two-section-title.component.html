@@ -1,4 +1,24 @@
-<div class="title-box {{ titleSectionProp.class }}">
+<div class="title-box {{ titleSectionProp.class }} ">
     <h2 class="{{ titleSectionProp.titleClass }}" *ngIf="titleSectionProp.title">{{ titleSectionProp.title }}</h2>
-    <p class="{{ titleSectionProp.descClass }}" *ngIf="titleSectionProp.description">{{ titleSectionProp.description }}</p>
+    <p class="{{ titleSectionProp.descClass }}" *ngIf="titleSectionProp.description">{{ titleSectionProp.description }}
+    </p>
+
+
+    <div class="col-lg-12 pl-5">
+        <div *ngIf="titleSectionProp.images">
+            <div class="row align-items-center pl-5">
+                <div *ngFor="let image1 of titleSectionProp.images" class="fancy-icon wow fadeInUp text-left ">
+                    <div class="media pl-2">
+                        <div class="fancy-img">
+                            <img src="{{ image1 }}" alt="fancybox">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0"></h5>
+                            <p class="mb-0"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
