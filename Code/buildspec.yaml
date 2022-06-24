@@ -91,20 +91,38 @@
 # https://stackoverflow.com/questions/65862056/aws-code-pipeline-build-failing-with-module-build-failed
 # https://forums.aws.amazon.com/thread.jspa?messageID=997338
 
-
 version: 0.2
+
+env:
+  variables:
+    APP_NAME: "portofolio"
+
 phases:
-   install:
-     runtime-versions:
-         nodejs: 12.x
-   pre_build:
-     commands:
-         - npm install
-   build:
-     commands:
-         - npm run build
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install -y npm@latest
+      - npm install -g @angular/cli@12.2.17
+      # - npm install -g @aws-amplify/cli
+      - # Execute Amplify CLI with the helper script'
+      # - amplifyPush --simple
+      # - yarn global add @aws-amplify/cli
+      - rm package-lock.json
+    pre_build:
+      commands:
+      - npm install
+  build:
+    commands:
+      # - amplifyPush --simple
+      - ng build
+  post_build:
+    commands:
+      - echo build process finished, we should upload to S3 now
+      # - cd dist/$APP_NAME
+      # - ls -la
 artifacts:
-   files:
-         - '**/*'
-   discard-paths: no
-   base-directory: dist*
+  files:
+    - '**/*'
+  base-directory: dist*
