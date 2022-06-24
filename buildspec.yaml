@@ -18,14 +18,13 @@ phases:
   build:
     commands:
       # - echo testing...
-      - echo building...
+      # - echo building...
       - ng build --prod
 artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist*
-
+  base-directory: dist/*
 # version: 0.2
 
 
