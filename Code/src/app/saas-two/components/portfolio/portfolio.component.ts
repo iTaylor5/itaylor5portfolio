@@ -51,7 +51,7 @@ export class PortfolioComponent implements OnInit {
 
   sizingCompany: any = {
     title: 'Computer Vision Sizing App',
-    description: "This was chosen as our final project in my Software Engineering degree. We were tasked with building an application that would be able to extract body measurements of a figure in an image provided to us by the frontend site. To accomplish this, we used AI modules to clean the image and carry out segmentation on the figures. E-commerce sites use this software to create profiles for users who would then only be shown clothing that would fit them.",
+    description: "This was chosen as our final project in my Software Engineering degree. We were tasked with building an application that would be able to extract body measurements of a figure in an image provided to us by the frontend site. To accomplish this, we used AI modules to clean the image and carry out segmentation on the figure. E-commerce sites use this software to create profiles for users who would then only be shown clothing that fits them.",
     images: ['./assets/pictures/python.jpeg']
   };
 
